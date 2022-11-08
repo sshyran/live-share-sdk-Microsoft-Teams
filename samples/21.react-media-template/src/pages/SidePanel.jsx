@@ -80,11 +80,11 @@ const SidePanel = () => {
                         if (error) {
                             console.error(error);
                         }
-                    }, `${window.location.origin}/?inTeams=true`);
+                    }, `${window.location.origin}/#/?inTeams=true`);
                 }
             } else {
                 // When testing locally, open in a new browser tab
-                window.open(`${window.location.origin}/`);
+                window.open(`${window.location.origin}/#/`);
             }
         },
         [sharingActive, selectMediaId, takeControl]
